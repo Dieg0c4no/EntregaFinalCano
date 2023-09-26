@@ -1,16 +1,26 @@
-import { ItemListcontainer } from "./components/ItemListContainer/ItemListcontainer";
-import NavBar from "./components/navbar/navbar"
-import './components/navbar/NavBar.css'
+import Navbar from './components/navbar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/style.css'
+import Categories from './components/categories/categories';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ProductsList from './components/products/ProductsList';
 function App() {
-  const greeting = "Tienda de Mascotas";
 
   return (
     <>
-   <NavBar/>
-    <ItemListcontainer greeting={greeting}/>
+      
+    <Router>
+        <Navbar/>
+        <Routes>
+          <Route exact path ='/' element={<Categories/>}/>
+          <Route exact path ='/products' element={<ProductsList/>}/>
+        </Routes>
+    </Router>
+
     </>
   )
 }
 
 export default App
+
+
