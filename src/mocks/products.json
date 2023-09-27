@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "https://www.freepik.es/vector-gratis/ilustracion-concepto-comida-mascotas_26576255.htm#query=comida%20perros&position=3&from_view=keyword&track=ais",
+        "image": "https://img.freepik.com/vector-gratis/ilustracion-concepto-comida-mascotas_114360-9420.jpg?w=740&t=st=1695748783~exp=1695749383~hmac=e4106222c9d4bd05cc9a48f46fdbb02ef714841746ec4c15cee47f59408a2504",
         "title":"producto 1",
         "price": 2000,
         "category": "Perros"
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "image": "https://www.freepik.es/vector-gratis/ilustracion-concepto-comida-mascotas_26576256.htm#query=comida%20perros&position=2&from_view=keyword&track=ais",
+        "image": "https://img.freepik.com/vector-gratis/conjunto-banner-vertical-comida-perros_1284-20801.jpg?size=626&ext=jpg&ga=GA1.2.240063983.1695495891&semt=ais",
         "title":"producto 2",
         "price": 3000,
         "category": "Perros"
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "image": "https://www.freepik.es/vector-gratis/cartel-comida-perros_5966128.htm#query=comida%20perros&position=6&from_view=keyword&track=ais",
+        "image": "https://img.freepik.com/vector-gratis/conjunto-iconos-transparentes-comida-perros_1284-20807.jpg?size=626&ext=jpg&ga=GA1.2.240063983.1695495891&semt=ais",
         "title":"producto 3",
         "price": 4000,
         "category": "Perros"
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "image": "https://www.freepik.es/vector-gratis/conjunto-banner-vertical-comida-perros_5966127.htm#query=comida%20perros&position=19&from_view=keyword&track=ais",
+        "image": "https://img.freepik.com/vector-gratis/lindos-perros-comida_24877-51182.jpg?size=626&ext=jpg&ga=GA1.2.240063983.1695495891&semt=ais",
         "title":"producto 4",
         "price": 2000,
         "category": "Perros"
@@ -114,6 +114,7 @@
     {
         "id": 15,
         "image": "https://img.freepik.com/vector-gratis/elementos-dibujados-mano-tienda-mascotas_23-2147571994.jpg?size=626&ext=jpg&ga=GA1.1.240063983.1695495891&semt=ais",
+        "title":"producto 15",
         "price": 3200,
         "category": "Accesorios"
 

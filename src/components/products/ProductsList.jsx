@@ -1,7 +1,7 @@
 import useAsyncMock from '../../hooks/useAsyncMock'
 import products from '../../mocks/products.json'
 import ProductDetail from "./ProductDetail";
-import { CircularProgress, Grid, Typography } from '@mui/material'
+import { CircularProgress, Grid } from '@mui/material'
 
 const ProductsList = () => {
     const {data, loading} = useAsyncMock(products)
@@ -9,9 +9,9 @@ const ProductsList = () => {
     if(loading) return <CircularProgress/>
     
   return (<div>
-    <Typography> Productos </Typography>
     
-        <Grid>
+    
+        <Grid container spacing={3}>
             {
                 data.map((products) => {
                     return (

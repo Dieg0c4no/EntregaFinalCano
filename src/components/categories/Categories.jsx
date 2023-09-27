@@ -1,7 +1,7 @@
-import { Card, CardContent, CircularProgress, Typography, imageListClasses } from '@mui/material'
-import React from 'react'
+import { Card, CardContent, CircularProgress, Typography } from '@mui/material'
 import useAsyncMock from '../../hooks/useAsyncMock'
 import categories from '../../mocks/categorias.json'
+import { Link } from 'react-router-dom'
 
 const Categories = () => {
     const {data, loading} = useAsyncMock(categories)
@@ -16,7 +16,7 @@ const Categories = () => {
                 return (
                     <Card key={category.id}>
 
-                        <CardContent>
+                        <CardContent component={Link} to={`/category/${category.category}`}>
                             <Typography>
                                 {category.category}
                             </Typography>
