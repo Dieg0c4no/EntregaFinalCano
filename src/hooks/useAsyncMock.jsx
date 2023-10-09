@@ -1,6 +1,6 @@
 import  { useEffect, useState } from 'react'
-
-    const useAsyncMock = (mock) => {
+import mock from '../mocks/products.json'
+    const useAsyncMock = () => {
     const [data, setData] = useState();
     const [loading, setLoading] = useState(true);
     const newMockPromise = new Promise((resolve, reject) => {
@@ -22,8 +22,8 @@ export default useAsyncMock
 export const mostrarProductos = (id) => {
    return new promise ((resolve, reject)=>{
 
-        const productDetail = data.find ((el) => el.id === id);
-        
+        const productDetail = mock.find ((el) => el.id === parseInt(id));
+        console.log(productDetail)
         if(productDetail){
             resolve (productDetail)
         }else{

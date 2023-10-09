@@ -12,7 +12,7 @@ const ProductDetail = ({products, children}) => {
                 <CardContent>
                     <Typography>{title}</Typography>
                     <Typography>${price.toFixed(2)}</Typography>
-                    <Link color= "secondary" variant="outlined" to={`/productDetail${products.id}`}> ver + </Link>
+                    <Link color= "secondary" variant="outlined" to={`/productDetail/${products.id}`}> ver + </Link>
                 </CardContent>
             </Card>
 

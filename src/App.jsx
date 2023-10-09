@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import ProductsList from './components/products/ProductsList';
 import CategoriesProductsList from './components/categories/categoriesProductsList';
 import {ItemDetail} from './components/products/ItemDetail';
-import ProductDetail from './components/products/ProductDetail';
+
+
 function App() {
 
   return (
@@ -22,7 +23,7 @@ function App() {
             <Route exact path ='/' element={<Categories/>}/>
             <Route exact path ='/products' element={<ProductsList/>}/>
             <Route exact path ='/category/:categoryId' element={<CategoriesProductsList/>}/>
-            <Route exact path='/productDetail/:id' element={< ProductDetail/>}/>
+            <Route exact path='/productDetail/:id' element={< ItemDetail/>}/>
            
           </Routes>
         

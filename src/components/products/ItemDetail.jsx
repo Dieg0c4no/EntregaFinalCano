@@ -1,21 +1,23 @@
 import { useEffect, useState } from "react"
 import { mostrarProductos } from "../../hooks/useAsyncMock"
 import ItemDetailProd from "./ItemDetailProd"
-import ProductDetail from "./ProductDetail"
+import { useParams } from "react-router-dom"
 
 
 
-export const ItemDetail = ({productDetail}) => {
-  const {productDetail, setProductDetail}= useState(null)
+
+export const ItemDetail = () => {
+  const [productDetail, setProductDetail]= useState({})
+  const {id} = useParams()
   useEffect(()=>{
 
-    mostrarProductos(productDetail)
-    .then ((res) =>{
+    mostrarProductos(id)
+    .then((res) =>{
         setProductDetail(res)
     })
-  },[])
+  },[id])
   return (
-    <ItemDetailProd item = {productDetail}/>
+    <ItemDetailProd productDetail={productDetail}/>
   )
 }
 

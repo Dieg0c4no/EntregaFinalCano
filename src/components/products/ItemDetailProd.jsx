@@ -1,11 +1,12 @@
 import React from 'react'
-import ProductDetail from './ProductDetail'
 
 const ItemDetailProd = ({ProductDetail}) => {
-   
+   console.log (ProductDetail)
   return (
     <div>
-        <img src={ProductDetail.imagen}/>
+        <h2>{ProductDetail.title}</h2>
+        <img src={ProductDetail.imagen} alt={ProductDetail.title}/>
+        
     </div>
   )
 }
