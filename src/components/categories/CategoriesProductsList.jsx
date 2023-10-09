@@ -15,7 +15,7 @@ const CategoriesProductsList = () => {
         <div>
             <Grid container spacing={3}>
                 {categorySelected.map((products)=>{
-                    return <ProductDetail key={products.id} products={products}/>
+                    return ( <ProductDetail key={products.id} products={products}/>)
                 })}
             </Grid>
         </div>

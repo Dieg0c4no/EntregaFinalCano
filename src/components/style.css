@@ -33,3 +33,8 @@
 .menu-link:hover {
     text-decoration: underline;
 }
+.imagenes{
+   padding: 40px;
+    display: flex;
+    justify-content: center;
+}
