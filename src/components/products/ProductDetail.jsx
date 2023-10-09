@@ -1,5 +1,5 @@
 import { Card, CardContent, Grid, Typography } from "@mui/material";
-import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 const ProductDetail = ({products, children}) => {
     const {id, image, title, price} = products
 
@@ -12,7 +12,7 @@ const ProductDetail = ({products, children}) => {
                 <CardContent>
                     <Typography>{title}</Typography>
                     <Typography>${price.toFixed(2)}</Typography>
-                    <Button color= "secondary" variant="outlined" href={`/productDetail/${products.id}`}> ver + </Button>
+                    <Link color= "secondary" variant="outlined" to={`/productDetail${products.id}`}> ver + </Link>
                 </CardContent>
             </Card>
 

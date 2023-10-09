@@ -22,10 +22,10 @@ export default useAsyncMock
 export const mostrarProductos = (id) => {
    return new promise ((resolve, reject)=>{
 
-        const item = data.find ((el) => el.id === id);
+        const productDetail = data.find ((el) => el.id === id);
         
-        if(item){
-            resolve (item)
+        if(productDetail){
+            resolve (productDetail)
         }else{
             reject({
                 error: "No se encontró el producto"

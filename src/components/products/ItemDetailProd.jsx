@@ -1,10 +1,11 @@
 import React from 'react'
+import ProductDetail from './ProductDetail'
 
-const ItemDetailProd = ({item}) => {
-    console.log(item)
+const ItemDetailProd = ({ProductDetail}) => {
+   
   return (
     <div>
-        <img src={item.imagen}/>
+        <img src={ProductDetail.imagen}/>
     </div>
   )
 }

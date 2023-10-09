@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react"
 import { mostrarProductos } from "../../hooks/useAsyncMock"
 import ItemDetailProd from "./ItemDetailProd"
+import ProductDetail from "./ProductDetail"
 
 
 
-export const ItemDetail = ({itemId}) => {
-  const {item, setItem}= useState(null)
+export const ItemDetail = ({productDetail}) => {
+  const {productDetail, setProductDetail}= useState(null)
   useEffect(()=>{
 
-    mostrarProductos(itemId)
+    mostrarProductos(productDetail)
     .then ((res) =>{
-        setItem(res)
+        setProductDetail(res)
     })
   },[])
   return (
-    <ItemDetailProd item = {item}/>
+    <ItemDetailProd item = {productDetail}/>
   )
 }
 
