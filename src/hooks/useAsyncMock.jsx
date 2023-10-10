@@ -20,7 +20,7 @@ import mockData from '../mocks/products.json'
 export default useAsyncMock
 
 export const mostrarProductos = (id) => {
-   return new promise ((resolve, reject)=>{
+   return new Promise ((resolve, reject)=>{
 
         const productDetail = mockData.find ((el) => el.id === parseInt(id));
         console.log(productDetail)
