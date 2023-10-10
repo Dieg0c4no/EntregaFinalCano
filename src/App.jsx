@@ -5,7 +5,8 @@ import Categories from './components/categories/categories';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import ProductsList from './components/products/ProductsList';
 import CategoriesProductsList from './components/categories/categoriesProductsList';
-import {ItemDetail} from './components/products/ItemDetail';
+// import { ItemDetail } from './components/products/ItemDetail';
+import ItemDetailProd from './components/products/ItemDetailProd';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
             <Route exact path ='/' element={<Categories/>}/>
             <Route exact path ='/products' element={<ProductsList/>}/>
             <Route exact path ='/category/:categoryId' element={<CategoriesProductsList/>}/>
-            <Route exact path='/productDetail/:id' element={< ItemDetail/>}/>
+            <Route exact path='/productDetail/:id' element={< ItemDetailProd/>}/>
            
           </Routes>
         
