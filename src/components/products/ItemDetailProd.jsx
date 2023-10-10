@@ -4,9 +4,10 @@ const ItemDetailProd = ({productDetail}) => {
    console.log (productDetail)
   return (
     <div>
-      
+
         <h2>{productDetail.title}</h2>
-        <img src={productDetail.imagen} alt={productDetail.title}/>
+        <img src={productDetail.image} alt={productDetail.title}/>
+        <h3>${productDetail.price}</h3>
         
     </div>
   )
