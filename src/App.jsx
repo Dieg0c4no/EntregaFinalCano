@@ -13,11 +13,11 @@ function App() {
 
   return (
     <>
-      
+     
     <Router>
       
         <Navbar/>
-
+        
           <Routes>  
             
             <Route exact path ='/' element={<Categories/>}/>
@@ -26,9 +26,8 @@ function App() {
             <Route exact path='/productDetail/:id' element={< ItemDetail/>}/>
            
           </Routes>
-        
     </Router>
-    
+        
     </>
   )
 }

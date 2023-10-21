@@ -5,14 +5,16 @@ const ProductDetail = ({products, children}) => {
 
   return (
         <Grid item key={id} xs={12} sm={6} md={4} lg={3}>
-            <Card >
+            
+            <Card sx={{background:"#f0e6ef"}} className="tarjeta">
                 <div className="imagenes">
                 <img src={image} />  
                 </div>
-                <CardContent>
+                <CardContent >
                     <Typography>{title}</Typography>
                     <Typography>${price.toFixed(2)}</Typography>
                     <Link color= "secondary" variant="outlined" to={`/productDetail/${products.id}`}> ver + </Link>
+                   
                 </CardContent>
             </Card>
 
