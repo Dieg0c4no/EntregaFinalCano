@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom"
 
 
 export const ItemDetail = () => {
-  const [productDetail, setProductDetail]= useState({})
+  const [productDetail, setProductDetail]= useState([])
   const {id} = useParams()
   useEffect(()=>{
 

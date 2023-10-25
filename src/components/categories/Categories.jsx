@@ -8,6 +8,7 @@ const Categories = () => {
     if(loading){ return <CircularProgress/> }
   return (
     <div>
+        <Typography ><h1>Tienda de Mascotas</h1></Typography>
         <Typography>
            <h2>Categorias</h2> 
         </Typography>
@@ -16,7 +17,7 @@ const Categories = () => {
                 return (
                     <Card key={category.id}>
 
-                        <CardContent component={Link} to={`/category/${category.category}`}     className='tipograf'> 
+                        <CardContent component={Link} to={`/category/${category.category}`} className='tipograf'> 
                             <Typography >
                                 <h6> {category.category}</h6>   
                             </Typography>
