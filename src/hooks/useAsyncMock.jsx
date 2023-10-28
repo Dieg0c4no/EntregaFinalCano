@@ -1,33 +1,50 @@
-import  { useEffect, useState } from 'react'
-import mockData from '../mocks/products.json'
+import  { useEffect, useState } from 'react';
+import {collection, getDocs} from 'firebase/firestore';
+import {db} from '../firebase/config';
 
 
-    const useAsyncMock = (mock) => {
+    const useAsyncMock = (products) => {
         
         const [data, setData] = useState();
 
         const [loading, setLoading] = useState(true);
 
         const newMockPromise = new Promise((resolve, reject) => {
+
             setTimeout(() => {
                 
-                resolve(mock)
+                resolve(products)
 
             }, 500);
         })
+
         useEffect(()=>{
-            newMockPromise.then((res) => { setData(res), setLoading(false) })
+        
+            const productRef = collection(db, "products")
+            getDocs(productRef)
+            .then((resp)=>{
+                    setData(resp.docs.map((doc)=>{
+                        setLoading(false)
+                    return {...doc.data(), id: doc.id}
+                    
+                }))
+            })
+            
+            // newMockPromise.then((resp) => { setData(resp), setLoading(false) })
         },[])
+
         return (
+
         {data, loading}
-    )
-    }
+
+    )}
+
 export default useAsyncMock
 
 export const mostrarProductos = (id) => {
    return new Promise ((resolve, reject)=>{
 
-        const productDetail = mockData.find ((el) => el.id === parseInt(id));
+        const productDetail = productsData.find ((el) => el.id === parseInt(id));
         
         if(productDetail){
             resolve (productDetail)

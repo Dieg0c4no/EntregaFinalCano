@@ -15,9 +15,9 @@ const ProductsList = () => {
             {
                 data.map((products) => {
                     return (
-                        <ProductDetail key={products.id} products={products}>
+                         <ProductDetail key={products.id} products={products}>
 
-                        </ProductDetail>
+                         </ProductDetail> 
                         
                     )
                 })

@@ -113,6 +113,10 @@
 .main-title {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    background: khaki;
+    text-align: center;
+    color:black;
+    
 }
 .price-total{
     background-color: chartreuse;
